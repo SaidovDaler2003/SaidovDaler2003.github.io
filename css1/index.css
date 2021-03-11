@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  padding: 100px 0 120px;
+}
+
+header h1 {
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+#more-btn {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+#more-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#web-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+#web-wrapper .item {
+  width: 500px;
+  font-size: 18px;
+}
+
+#cards-wrapper {
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: center;
+}
+
+#cards-wrapper .item {
+  background-color: white;
+  border: 1px solid black;
+  width: 300px;
+}
+
+#cards-wrapper .item h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#cards-wrapper .item img {
+  width: 100%;
+  height: 200px;
+  background-color: blue;
+  margin-bottom: 20px;
+}
+
+#cards-wrapper .item p {
+  text-align: center;
+  margin: 0 10px 40px;
+  font-size: 18px;
+}
+
+#digital-wrapper {
+  padding: 50px;
+}
+
+.mr-auto {
+  margin: 0 auto;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  height: 400px;
+  display: grid;
+  grid-template-areas: 
+  'area-1 area-2'
+  'area-1 area-2'
+  'area-1 area-2'
+  'area-3 area-4';
+}
+
+footer .item {
+  /* border: 1px solid black; */
+}
+
+footer .item h2,
+footer .item p {
+  text-align: center;
+}
+
+footer .item h2 {
+  margin-top: 20px;;
+}
+
+footer .item p {
+  font-size: 18px;
+}
+
+#item-1, #item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#item-1 p, #item-2 p {
+  margin-top: 10px;
+}
+
+#item-3, #item-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 863px) {
+  #cards-wrapper  {
+    flex-direction: column;
+  }
+
+  #cards-wrapper .item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 751px) {
+  footer {
+    grid-template-areas:
+      'area-1'
+      'area-2'
+      'area-3'
+      'area-4';
+  }
+}
