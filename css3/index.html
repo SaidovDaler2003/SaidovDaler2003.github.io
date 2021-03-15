@@ -16,6 +16,24 @@
   <body>
     <div class="wrapper">
       <header class="header">
+        <div class="header__swing header__swing-fb">
+          <i class="fab fa-facebook-f swing__icon"></i>
+          <div class="swing__info">
+            @FakeFacebookAccount
+          </div>
+        </div>
+        <div class="header__swing header__swing-tw">
+          <i class="fab fa-twitter swing__icon"></i>
+          <div class="swing__info">
+            @FaceTwitterAccount
+          </div>
+        </div>
+        <div class="header__swing header__swing-yt">
+          <i class="fab fa-youtube swing__icon"></i>
+          <div class="swing__info">
+            @FakeYoutubeAccount
+          </div>
+        </div>
         <i
           class="fas fa-bars header__bars"
           @click="toggle()"
@@ -28,18 +46,23 @@
           <i
             class="fas fa-times header__times"
             @click="toggle()"
-          >
-
-          </i>
+          ></i>
           <ul class="open__nav">
             <li class="open__nav__link">About</li>
             <li class="open__nav__link">Contact</li>
             <li class="open__nav__link">Home</li>
           </ul>
         </div>
-        <div class="header__logo">
-          <img src="" alt="" class="header__img" />
-          <h1 class="header__logo">Simple house</h1>
+        <div class="header__center">
+          <h1 class="center__text">
+            Welcome to Simple House!
+          </h1>
+          <button class="center__btn">
+            <span class="center__btn__text">
+              START
+            </span>
+            <div class="center__btn__wave"></div>
+          </button>
         </div>
         <ul class="nav">
           <li class="nav__link">Home</li>
@@ -47,7 +70,7 @@
           <li class="nav__link">Contact</li>
         </ul>
       </header>
-      <main class="main">
+      <main class="main" id="main">
         <h2 class="main__welcome">Welcome to simple house</h2>
         <p class="main__about">
           This html/css template is created by me to include <br>

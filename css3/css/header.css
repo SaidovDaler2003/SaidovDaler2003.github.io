@@ -1,9 +1,56 @@
 .header {
   position: relative;
   height: 500px;
-  background-image: url(../images/house.jpg);
+  background-image: url(../images/bg1.jpg);
   background-attachment: fixed;
   background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__center {
+  color: white;
+  text-align: center;
+}
+
+.center__text {
+  position: relative;
+}
+
+.center__btn {
+  margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  background-color: #12ACC8;
+  overflow: hidden;
+}
+
+.center__btn__text {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  z-index: 999;
+}
+
+.center__btn__wave {
+  height: 0;
+  width: 100%;
+  background-color: rgb(44, 13, 221);
+  position: absolute;
+  bottom: 0;
+  transition: height .3s linear;
+  z-index: 9;
+}
+
+.center__btn:hover .center__btn__wave {
+  height: 100%;
 }
 
 .header__bars {
@@ -17,11 +64,11 @@
 }
 
 .header__times {
-  font-size: 26px;
+  font-size: 16px;
   color: black;
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
 }
 
 .header__times:hover {
@@ -40,43 +87,30 @@
   animation-duration: .2s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
-}
-
-.animate-open {
-  animation-name: open;
-}
-
-.animate-close {
-  animation-name: close;
-}
-
-@keyframes open {
-  from {
-    right: -150px;
-  }
-  to {
-    right: 0;
-  }
-}
-
-@keyframes close {
-  from {
-    right: 0;
-  }
-  to {
-    right: -150px;
-  }
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .open__nav {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
 }
 
 .open__nav__link {
-  margin: 10px 0;
+  padding: 10px 0;
   cursor: pointer;
+}
+
+.header__open,
+.open__nav,
+.open__nav__link {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.open__nav__link:hover {
+  background-color: grey;
+  color: white;
 }
 
 .header__bars:hover {
@@ -105,11 +139,63 @@
   border-color: white;
 }
 
-.header__logo {
+.header__swing {
+  height: 50px;
+  background-color: rgb(70, 90, 68);
+  width: 250px;
   position: absolute;
-  bottom: 30px;
-  left: 30px;
-  color: white;
+  left: -200px;
+  cursor: pointer;
+  transition-property: left;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+.header__swing-fb {
+  top: 30px;
+}
+
+.header__swing-tw {
+  top: 100px;
+}
+
+.header__swing-yt {
+  top: 170px;
+}
+
+.header__swing-fb:hover {
+  color: blue;
+}
+
+.header__swing-yt:hover {
+  color: red;
+}
+
+.header__swing-tw:hover {
+  color: rgb(10, 94, 122);
+}
+
+.swing__icon {
+  float: right;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  height: 100%;
+}
+
+.swing__info {
+  color: black;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header__swing:hover {
+  left: 0;
 }
 
 @media (max-width: 517px) {
@@ -122,3 +208,28 @@
   }
 }
 
+@keyframes open {
+  from {
+    right: -150px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes close {
+  from {
+    right: 0;
+  }
+  to {
+    right: -150px;
+  }
+}
+
+.animate-open {
+  animation-name: open;
+}
+
+.animate-close {
+  animation-name: close;
+}
