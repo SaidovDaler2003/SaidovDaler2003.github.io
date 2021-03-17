@@ -1,0 +1,33 @@
+.header {
+  @include border();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+%header__btn {
+  @include border(3px, black);
+  width: 100px;
+  height: 50px;
+  cursor: pointer
+}
+
+.header__login-btn {
+  @extend %header__btn;
+  color: green;
+}
+
+.header__signin-btn {
+  @extend %header__btn;
+  color: red;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  cursor: pointer;
+  margin: 0 20px;
+}
