@@ -1,4 +1,6 @@
-.main {}
+.main {
+  background-color: rgb(223, 208, 208);
+}
 
 .hr {
   margin: 20px 0 100px;
@@ -22,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  filter: grayscale(80%);
+  filter: brightness(0.4);
 }
 
 .info__welcome {
@@ -30,7 +32,7 @@
   z-index: 300;
   font-weight: bold;
   text-transform: uppercase;
-  color: black !important;
+  color: rgb(255, 255, 255) !important;
   margin-top: 20px;
 }
 
@@ -42,6 +44,8 @@
 
 .about__item {
   flex-basis: 25%;
+  background-color: white;
+  border-radius: 30px;
   padding: 20px 0;
   text-align: center;
   margin: 0 20px;
@@ -57,6 +61,41 @@
 
   &:hover {
     box-shadow: 0 0 5px black;
+  }
+
+  i {
+    animation: {
+      duration: .3s;
+      timing-function: forwards;
+      iteration-count: infinite;
+    }
+  }
+
+  &:hover .fa-plane {
+    color: rgb(38, 38, 182);
+  }
+
+  &:hover .fa-dollar-sign {
+    color: rgb(0, 185, 25);
+  }
+
+  &:hover .fa-utensils {
+    color: rgb(228, 206, 9);
+  }
+
+  &:hover i {
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-name: spin;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }
 
@@ -89,10 +128,12 @@
   z-index: 1;
 
   img {
+    @include border(3px, black);
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: width .2s linear, height .2s linear;
+    border-radius: 30px;
   }
 
   img:hover {
@@ -105,6 +146,7 @@
   @include perfect-center;
   opacity: 0;
   position: absolute;
+  border-radius: 30px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -141,8 +183,10 @@
   padding: 30px 0;
   width: 400px;
   text-align: center;
+  border-radius: 30px;
   box-shadow: 0 0 5px black;
   transition: box-shadow .2s linear;
+  background-color: white;
 
   h3 {
     font-size: 30px;
@@ -160,7 +204,7 @@
 }
 
 .review__image {
-  @include border(2px);
+  @include border(1px, grey);
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -168,7 +212,7 @@
 
 .main__book {
   display: flex;
-  padding: 20px 0;
+  padding: 0 0 40px;
 }
 
 .book__form, .book__address {
@@ -177,23 +221,54 @@
 }
 
 .book__form {
- 
+  
+  h2 {
+    font-size: 40px;
+  }
 }
 
 .form__field {
-  border-bottom: 1px solid rgb(0, 238, 255);
-  padding: 10px 0;
+  display: flex;
+  border-bottom: 1px solid rgb(0, 0, 0);
   width: 300px;
   text-indent: 10px;
   margin-bottom: 10px;
   font-size: 1.3em;
+  height: 50px;
+  margin: 20px auto;
+
+  input {
+    height: 100%;
+    flex-grow: 1;
+    background-color: transparent;
+    font-size: 1.2em;
+    text-indent: 10px;
+  }
+
+  i {
+    @include perfect-center;
+    flex-basis: 50px;
+    height: 100%;
+  }
 }
 
 .form__submit {
-  @include border;
+  @include border(3px, #484d9f);
+  color: #484d9f;
   width: 150px;
-  padding: 10px 0;
+  font-size: 20px;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 15px 0;
   margin-top: 20px;
+  cursor: pointer;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: #484d9f;
+    color: white;
+  }
 }
 
 .book__address {
@@ -205,6 +280,10 @@
     td {
       padding: 10px 0;
     }
+  }
+
+  h2 {
+    font-size: 40px;
   }
 }
 
@@ -219,6 +298,10 @@
   .main__about {
     flex-direction: column;
   }
+
+  .about__item {
+    margin: 20px 0;
+  }
 }
 
 @media (max-width: 814px) {
@@ -229,17 +312,38 @@
 
   .reviews__review {
     margin: 20px 0;
+    width: 100%;
   }
 
   .main__book {
     flex-direction: column;
   }
+
+  .book__form {
+    margin: 0 0 50px;
+    
+  }
+
+  .form__field {
+    width: 100%;
+  }
+
+  .book__address {
+    
+    table {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 796px) {
   .main__pics {
-    grid-template-columns: 350px;
+    grid-template-columns: 100%;
     grid-template-rows: 250px 250px 250px 250px 250px 250px;
+  }
+
+  .pics__pic {
+    
   }
 }
 
@@ -255,11 +359,11 @@
 
 .main__link-btn {
   @include perfect-center;
-  @include border(2px, rgb(0, 0, 0));
+  @include border(4px, rgb(255, 255, 255));
   font-weight: bold;
   position: relative;
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   width: 150px;
   height: 60px;
   font-size: 20px;
@@ -269,6 +373,7 @@
   border-radius: 40px;
   cursor: pointer;
   overflow: hidden;
+  background-color: transparent;
 
   &:hover .link-btn__up {
     height: 100%;

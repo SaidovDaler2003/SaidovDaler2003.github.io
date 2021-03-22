@@ -24,7 +24,7 @@ button, input {
   justify-content: space-around;
   padding: 20px 10px;
   color: white;
-  background-color: rgba(221, 151, 60, 0.77);
+  background-color: rgba(0, 0, 0, 0.77);
   position: fixed;
   width: 100%;
   top: 0;
@@ -124,7 +124,7 @@ button, input {
   cursor: pointer;
 }
 .nav__link:hover {
-  text-decoration: underline;
+  color: grey;
 }
 
 @media (max-width: 921px) {
@@ -231,6 +231,10 @@ button, input {
     justify-content: center;
   }
 }
+.main {
+  background-color: #dfd0d0;
+}
+
 .hr {
   margin: 20px 0 100px;
 }
@@ -255,7 +259,7 @@ button, input {
   left: 0;
   width: 100%;
   height: 100%;
-  filter: grayscale(80%);
+  filter: brightness(0.4);
 }
 
 .info__welcome {
@@ -263,7 +267,7 @@ button, input {
   z-index: 300;
   font-weight: bold;
   text-transform: uppercase;
-  color: black !important;
+  color: white !important;
   margin-top: 20px;
 }
 
@@ -275,6 +279,8 @@ button, input {
 
 .about__item {
   flex-basis: 25%;
+  background-color: white;
+  border-radius: 30px;
   padding: 20px 0;
   text-align: center;
   margin: 0 20px;
@@ -290,7 +296,34 @@ button, input {
 .about__item:hover {
   box-shadow: 0 0 5px black;
 }
+.about__item i {
+  animation-duration: 0.3s;
+  animation-timing-function: forwards;
+  animation-iteration-count: infinite;
+}
+.about__item:hover .fa-plane {
+  color: #2626b6;
+}
+.about__item:hover .fa-dollar-sign {
+  color: #00b919;
+}
+.about__item:hover .fa-utensils {
+  color: #e4ce09;
+}
+.about__item:hover i {
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-name: spin;
+}
 
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
 .about__item__border {
   border: 3px solid black;
   display: flex;
@@ -321,10 +354,12 @@ button, input {
   z-index: 1;
 }
 .pics__pic img {
+  border: 3px solid black;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: width 0.2s linear, height 0.2s linear;
+  border-radius: 30px;
 }
 .pics__pic img:hover {
   width: 130%;
@@ -337,6 +372,7 @@ button, input {
   justify-content: center;
   opacity: 0;
   position: absolute;
+  border-radius: 30px;
   top: 0;
   left: 0;
   bottom: 0;
@@ -371,8 +407,10 @@ button, input {
   padding: 30px 0;
   width: 400px;
   text-align: center;
+  border-radius: 30px;
   box-shadow: 0 0 5px black;
   transition: box-shadow 0.2s linear;
+  background-color: white;
 }
 .reviews__review h3 {
   font-size: 30px;
@@ -387,7 +425,7 @@ button, input {
 }
 
 .review__image {
-  border: 2px solid black;
+  border: 1px solid grey;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -395,7 +433,7 @@ button, input {
 
 .main__book {
   display: flex;
-  padding: 20px 0;
+  padding: 0 0 40px;
 }
 
 .book__form, .book__address {
@@ -403,20 +441,51 @@ button, input {
   flex-basis: 50%;
 }
 
+.book__form h2 {
+  font-size: 40px;
+}
+
 .form__field {
-  border-bottom: 1px solid #00eeff;
-  padding: 10px 0;
+  display: flex;
+  border-bottom: 1px solid black;
   width: 300px;
   text-indent: 10px;
   margin-bottom: 10px;
   font-size: 1.3em;
+  height: 50px;
+  margin: 20px auto;
+}
+.form__field input {
+  height: 100%;
+  flex-grow: 1;
+  background-color: transparent;
+  font-size: 1.2em;
+  text-indent: 10px;
+}
+.form__field i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50px;
+  height: 100%;
 }
 
 .form__submit {
-  border: 1px solid black;
+  border: 3px solid #484d9f;
+  color: #484d9f;
   width: 150px;
-  padding: 10px 0;
+  font-size: 20px;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 15px 0;
   margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.form__submit:hover {
+  background-color: #484d9f;
+  color: white;
 }
 
 .book__address table {
@@ -425,6 +494,9 @@ button, input {
 }
 .book__address table td {
   padding: 10px 0;
+}
+.book__address h2 {
+  font-size: 40px;
 }
 
 @media (max-width: 1151px) {
@@ -437,6 +509,10 @@ button, input {
   .main__about {
     flex-direction: column;
   }
+
+  .about__item {
+    margin: 20px 0;
+  }
 }
 @media (max-width: 814px) {
   .main__reviews {
@@ -446,15 +522,28 @@ button, input {
 
   .reviews__review {
     margin: 20px 0;
+    width: 100%;
   }
 
   .main__book {
     flex-direction: column;
   }
+
+  .book__form {
+    margin: 0 0 50px;
+  }
+
+  .form__field {
+    width: 100%;
+  }
+
+  .book__address table {
+    width: 100%;
+  }
 }
 @media (max-width: 796px) {
   .main__pics {
-    grid-template-columns: 350px;
+    grid-template-columns: 100%;
     grid-template-rows: 250px 250px 250px 250px 250px 250px;
   }
 }
@@ -471,11 +560,11 @@ button, input {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
+  border: 4px solid white;
   font-weight: bold;
   position: relative;
   background-color: white;
-  color: black;
+  color: white;
   width: 150px;
   height: 60px;
   font-size: 20px;
@@ -485,6 +574,7 @@ button, input {
   border-radius: 40px;
   cursor: pointer;
   overflow: hidden;
+  background-color: transparent;
 }
 .main__link-btn:hover .link-btn__up {
   height: 100%;
