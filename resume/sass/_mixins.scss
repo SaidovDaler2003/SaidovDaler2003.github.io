@@ -1,0 +1,17 @@
+@mixin border($size: 1px, $color: black) {
+  border: $size solid $color;
+}
+
+@mixin perfect-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition($property, $duration) {
+  transition: $property $duration linear;
+}
+
+@mixin shadow($size: 4px, $color: black) {
+  box-shadow: 0 0 $size $color;
+}
