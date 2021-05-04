@@ -1,0 +1,22 @@
+@import "../initial/reset";
+@import "../initial/variables";
+@import "../initial/mixins";
+
+.main {
+  & {
+    @include border(1px);
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.projects {
+  & {
+    @include border(1px, black);
+    padding: 10px;
+  }
+  &__project {
+    @include border(1px, blue);
+    margin: 10px 0;
+  }
+}

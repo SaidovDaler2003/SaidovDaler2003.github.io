@@ -1,0 +1,21 @@
+.header-nav {
+  & {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+  }
+  &__link {
+    margin: 0 15px;
+    font-size: 20px;
+
+    &_active {
+      a {
+        color: grey;
+      }
+    }
+  }
+}

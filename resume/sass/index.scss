@@ -1,7 +1,7 @@
-@import "reset";
-@import "variables";
-@import "mixins";
-@import "app";
-@import "nav";
-@import "header";
-@import "main";
+@import "initial/reset";
+@import "initial/variables";
+@import "initial/mixins";
+
+@import "layout/header";
+@import "layout/navs";
+

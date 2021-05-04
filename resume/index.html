@@ -4,224 +4,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="anime.min.js" ></script>
-  <script src="index.js" defer></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <title>About Page</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/pages/about.css">
 </head>
 <body>
-  <div class="app">
-    <div class="app__left">
-      <nav class="nav" id="nav">
-        <div id="close">
-          &times;
-        </div>
-        <div class="nav__link">
-          <a href="#about">
-            About me
-          </a>
-        </div>
-        <div class="nav__link">
-          <a href="#tecks">
-            Tecknologed
-          </a>
-        </div>
-        <div class="nav__link">
-          <a href="#projects">
-            Projects
-          </a>
-        </div>
-        <div class="nav__link">
-          <a href="#contacts">
-            Contacts
-          </a>
-        </div>
-      </nav>
+  <header class="header">
+    <div class="header__logo">
+      Resume
     </div>
-    <div class="app__right">
-      <header class="header">
-        <div class="header__logo">
-          Resume
-        </div>
-        <i class="fas fa-bars" id="bars"></i>
-      </header>
-      <main class="main">
-        <div class="main__section main__about" id="about">
-          <h2 class="section__title">
-            Hi!, I'm Daler 
-          </h2>
-          <span class="about__subtitle">
-            Frontend developer
-          </span>
-          <p>
-            Through constant learning and creation, I produce
-            aesthetic software to the highest standard. I’m
-            largely framework agnostic but technologies I love
-            right now are React, Vue and Styled Components.
-          </p>
-        </div>
-        <div class="main__section main__tecks" id="tecks">
-          <h2 class="section__title">
-            Tecknologied I know:
-          </h2>
-          <div class="tecks__items">
-            <div class="tecks__items__item">
-              <img src="images/logos/html.png">
-              <div class="tecks__items__item__info">
-                Html
-              </div>
-            </div>
-            <div class="tecks__items__item">
-              <img src="images/logos/vue.png">
-              <div class="tecks__items__item__info">
-                VueJs
-              </div>
-            </div>
-            <div class="tecks__items__item">
-              <img src="images/logos/css.png">
-              <div class="tecks__items__item__info">
-                Css
-              </div>
-            </div>
-            <div class="tecks__items__item">
-              <img src="images/logos/ts.png">
-              <div class="tecks__items__item__info">
-                TypeScript
-              </div>
-            </div>
-            <div class="tecks__items__item">
-              <img src="images/logos/sass.png">
-              <div class="tecks__items__item__info">
-                Sass
-              </div>
-            </div>
-            <div class="tecks__items__item">
-              <img src="images/logos/git.png">
-              <div class="tecks__items__item__info">
-                Git
-              </div>
-            </div>
-            <div class="tecks__items__item">
-              <img src="images/logos/react.png">
-              <div class="tecks__items__item__info">
-                ReactJs
-              </div>
-            </div>
-            <div class="tecks__items__item">
-              <img src="images/logos/node.png">
-              <div class="tecks__items__item__info">
-                Node JS
-              </div>
+    <nav class="header-nav">
+      <div class="header-nav__link header-nav__link_active">
+        <a href="#">About</a>
+      </div>
+      <div class="header-nav__link">
+        <a href="pages/projects.html">Projects</a>
+      </div>
+      <div class="header-nav__link">
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="about">
+      <img src="images/avatar.png" class="about__avatar">
+      <div class="about__text"
+      > <div class="about__hello"
+        >Hi! My name is Daler.
+        </div
+        >
+        I am professional web developer.
+        I have experience in working with various
+        web tecknologies including React, Vue, Angular
+      </div>
+    </div>
+    <div class="skills">
+      <h2 class="skills__title">
+        Skills
+      </h2>
+      <ul class="skills__list">
+        <li class="skill">
+          <h3 class="skill__title">
+            <a href="#" class="skill__link">
+              React
+            </a>
+          </h3>
+          <div class="skill__body">
+            Level: <br>
+            <div class="skill__bar">
+              <div class="skill__bar-inner skill__bar-inner_advanced"></div>
             </div>
           </div>
-          <h3>Additional tools:</h3>
-          <ul class="tecks__additional">
-            <li class="additional__item">
-              Bootstrap | Response | Adaptive design | Animations
-            </li>
-            <li class="additional__item">
-              JQuery | AnimeJs | SwiperJs | Gulp | Npm | Axios
-            </li>
-            <li class="additional__item">
-              Redux | Redux/toolkit | redux-thunk | Styled-Components | Formik
-            </li>
-            <li class="additional__item">
-              Vuex | Vue-Router | Vue-Cli
-            </li>
-          </ul> 
-        </div>
-        <div class="main__projects" id="projects">
-          <h2>My Projects</h2>
-          <ul class="projects__list">
-            <h3>Css skills:</h3>
-            <li class="projects__project css-skill">
-              <a href="https://saidovdaler2003.github.io/css5/">
-                Dervish Hostel
-              </a>
-            </li>
-            <li class="projects__project css-skill">
-              <a href="https://saidovdaler2003.github.io/css4/">
-                Photo Gallery
-              </a>
-            </li>
-            <li class="projects__project css-skill">
-              <a href="https://saidovdaler2003.github.io/css3/">
-                Simple house
-              </a>
-            </li>
-            <h3>React skills:</h3>
-            <li class="projects__project react-skill">
-              <a href="https://saidovdaler2003.github.io/react4">
-                Quiz App
-              </a>
-            </li>
-            <li class="projects__project react-skill">
-              <a href="https://saidovdaler2003.github.io/react3">
-                Expense tracker
-              </a>
-            </li>
-            <li class="projects__project react-skill">
-              <a href="https://saidovdaler2003.github.io/react2">
-                Mini social media
-              </a>
-            </li>
-            <li class="projects__project react-skill">
-              <a href="https://saidovdaler2003.github.io/react1">
-                Shop (no css, because I focused on JavaScript)
-              </a>
-            </li>
-            <h3>Vue skills:</h3>
-            <li class="projects__project vue-skill">
-              <a href="https://saidovdaler2003.github.io/vue1">
-                Color guess game
-              </a>
-            </li>
-            <h3>Vanilla Js skills:</h3>
-            <li class="projects__project vanilla-skill">
-              <a href="https://saidovdaler2003.github.io/js1">
-                Tic Tac Toe
-              </a>
-            </li>
-          </ul>
-        </div>
-        <h2>Contacts</h2>
-        <div class="main__contacts" id="contacts">
-          <ul class="contacts__list">
-            <li class="contacts__contact">
-              <div class="contacts__icon">
-                <i class="fab fa-telegram"></i>
-              </div>
-              <button>
-                <a href="https://t.me">
-                  Visit
-                </a>
-              </button>
-            </li>
-            <li class="contacts__contact">
-              <div class="contacts__icon">
-                <i class="fab fa-github"></i>
-              </div>
-              <button>
-                <a href="https://github.com/SaidovDaler2003">
-                  Visit
-                </a>
-              </button>
-            </li>
-            <li class="contacts__contact">
-              <div class="contacts__icon">
-                <i class="fab fa-twitter"></i>
-              </div>
-              <button>
-                <a href="https://twitter.com/DalerSaidov2003">
-                  Visit
-                </a>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </main>
+        </li>
+      </ul>
     </div>
-  </div>
+  </main>
 </body>
 </html>

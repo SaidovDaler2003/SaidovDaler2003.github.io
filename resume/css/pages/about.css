@@ -1,0 +1,98 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  height: 1000px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url(../../fonts/OpenSans-Regular.ttf);
+}
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about {
+  box-shadow: 0 0 2px black;
+  background-color: white;
+  display: flex;
+  padding: 10px;
+  margin-top: 50px;
+}
+.about__hello {
+  font-size: 25px;
+  font-weight: bold;
+}
+.about__avatar {
+  flex-basis: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.about__text {
+  flex-grow: 1;
+  padding: 10px;
+  padding-left: 30px;
+  white-space: pre-line;
+  font-family: "open-sans";
+  font-size: 15px;
+}
+
+.skills {
+  margin-top: 50px;
+}
+.skills__title {
+  text-align: center;
+}
+.skill {
+  box-shadow: 0 0 2px black;
+  padding: 10px;
+  margin: 10px 0;
+}
+.skill__title {
+  color: black;
+}
+.skill__link {
+  color: #2c2ccf;
+}
+.skill__body {
+  margin-top: 30px;
+}
+.skill__bar {
+  width: 150px;
+  height: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #E0E0E0;
+}
+.skill__bar-inner {
+  background-color: #9273CD;
+  height: 100%;
+  border-radius: 15px;
+}
+.skill__bar-inner_beginner {
+  width: 20%;
+}
+.skill__bar-inner_advanced {
+  width: 80%;
+}
+
+/*# sourceMappingURL=about.css.map */

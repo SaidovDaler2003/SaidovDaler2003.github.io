@@ -1,0 +1,89 @@
+@import "../initial/reset";
+@import "../initial/variables";
+@import "../initial/mixins";
+
+@font-face {
+  font-family: open-sans;
+  src: url(../../fonts/OpenSans-Regular.ttf);
+}
+
+.main {
+  & {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.about {
+  & {
+    box-shadow: 0 0 2px black;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  &__hello {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  &__avatar {
+    flex-basis: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  &__text {
+    flex-grow: 1;
+    padding: 10px;
+    padding-left: 30px;
+    white-space: pre-line;
+    font-family: "open-sans";
+    font-size: 15px;
+  }
+}
+
+.skills {
+  & {
+    margin-top: 50px;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__list {}
+}
+
+.skill {
+  & {
+    box-shadow: 0 0 2px black;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  &__title {
+    color: rgb(0, 0, 0);
+  }
+  &__link {
+    color: rgb(44, 44, 207);
+  }
+  &__body {
+    margin-top: 30px;
+  }
+  &__bar {
+    width: 150px;
+    height: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #E0E0E0;
+
+    &-inner {
+      background-color: #9273CD;
+      height: 100%;
+      border-radius: 15px;
+
+      &_beginner {
+        width: 20%;
+      }
+      &_advanced {
+        width: 80%;
+      }
+    }
+  }
+}
