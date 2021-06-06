@@ -30,3 +30,10 @@
     display: initial;
   }
 }
+
+@media screen and (max-width: 469px) {
+  .line {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+}

@@ -23,8 +23,8 @@
     color: #0f0f0f;
   }
   &__img-container {
-    // background-color: #e7e7e7;
-    background-color: lightcoral;
+    background-color: #e7e7e7;
+    // background-color: lightcoral;
     flex-basis: 200px;
     height: 200px;
     border-radius: 50%;
@@ -61,11 +61,11 @@
 @media screen and (max-width: 615px) {
   .about {
     & {
+      margin-top: 10px;
       flex-direction: column-reverse;
       align-items: center;
     }
     &__img-container {
-      @include border(3px);
       flex-basis: initial;
       width: 200px;
       height: 200px;
@@ -108,7 +108,7 @@
   }
   &__skill {
     & {
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.315);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.205);
       position: relative;
       padding: 10px;
       padding-right: 20px;
@@ -162,13 +162,16 @@
 @media screen and (max-width: 526px) {
   .skills {
     & {
-      margin-top: 20px;
+      margin-top: 30px;
     }
     &__list {
       grid-template-columns: auto;
+      grid-gap: 5px;
     }
     &__skill {
-      & {}
+      & {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.075)
+      }
       &-img {
         height: 40px;
       }

@@ -62,7 +62,7 @@
 .projects__project-btn-view {
   margin-left: 0;
   align-items: center;
-  background-color: #F37832;
+  background-color: #26495c;
   color: white;
   border-radius: 25px;
   padding: 3px;
@@ -70,7 +70,7 @@
 }
 .projects__project-btn-github {
   align-items: center;
-  background-color: #01AFD1;
+  background-color: #c4a35a;
   color: white;
   border-radius: 25px;
   padding: 3px;
@@ -86,6 +86,44 @@
   width: 30px;
   height: 30px;
   background-color: rgba(255, 255, 255, 0.295);
+}
+
+@media screen and (max-width: 1130px) {
+  .main {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 746px) {
+  .projects__project {
+    flex-direction: column;
+  }
+  .projects__project-text {
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .projects__project-img {
+    width: 70%;
+  }
+  .projects__project-text {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 469px) {
+  .projects__project {
+    margin: 40px 0;
+  }
+  .projects__project:nth-child(1) {
+    margin-top: 0;
+  }
+  .projects__project-img {
+    width: 100%;
+  }
+  .projects__project-text {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=projects.css.map */

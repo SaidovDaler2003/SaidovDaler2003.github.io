@@ -72,7 +72,8 @@
     @extend %project-btn;
     margin-left: 0;
     align-items: center;
-    background-color: #F37832;
+    // background-color: #F37832;
+    background-color: #26495c;
     color: white;
     border-radius: 25px;
     padding: 3px;
@@ -81,7 +82,8 @@
   &__project-btn-github {
     @extend %project-btn;
     align-items: center;
-    background-color: #01AFD1;
+    // background-color: #01AFD1;
+    background-color: #c4a35a;
     color: white;
     border-radius: 25px;
     padding: 3px;
@@ -95,5 +97,69 @@
     width: 30px;
     height: 30px;
     background-color: rgba(255, 255, 255, 0.295);
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .main {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 746px) {
+  .projects {
+    & {
+
+    }
+    &__project {
+      & {
+        // @include border;
+        flex-direction: column;
+      }
+      &-text {
+        // @include border;
+        padding: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .projects {
+    & {}
+    &__project {
+      & {
+      
+      }
+      &-img {
+        width: 70%;
+      }
+      &-text {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 469px) {
+  .projects {
+    & {}
+    &__project {
+      & {
+        // padding: 0 20px;
+        margin: 40px 0;
+      }
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+      &-img {
+        width: 100%;
+      }
+      &-text {
+        width: 100%;
+      }
+    }
   }
 }

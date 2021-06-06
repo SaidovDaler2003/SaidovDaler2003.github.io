@@ -1,17 +1,10 @@
 .main {
   margin: 0 auto;
   width: 60%;
-  min-height: 100px;
-  min-height: 700px;
 }
 .main__title {
   margin-top: 40px;
   line-height: 1;
-}
-.main__line {
-  height: 1px;
-  background-color: black;
-  margin: 20px 0 50px;
 }
 .main__subtitle {
   color: rgba(0, 0, 0, 0.582);
@@ -25,6 +18,7 @@
 .ques__que {
   cursor: pointer;
   padding: 20px;
+  margin: 10px 0;
   box-shadow: 0 0 1px black;
 }
 .ques__que-header {
@@ -43,6 +37,13 @@
 }
 .ques .fa-sort-down {
   font-size: 25px;
+}
+
+@media screen and (max-width: 747px) {
+  .main {
+    width: 100%;
+    padding: 0 20px;
+  }
 }
 
 /*# sourceMappingURL=questions.css.map */

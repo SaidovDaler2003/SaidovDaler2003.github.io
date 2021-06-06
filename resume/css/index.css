@@ -172,6 +172,9 @@ h4 {
   .header-nav__link {
     color: black;
   }
+  .header-nav__link--active {
+    color: #9273cd;
+  }
   .header-nav__phone-number {
     display: none;
   }
@@ -235,6 +238,7 @@ h4 {
     padding: 10px;
     align-items: flex-start;
     line-height: 1;
+    margin-top: 30px;
   }
   .footer__column-item {
     margin: 3px 0;
@@ -258,6 +262,13 @@ h4 {
 }
 .shade--shown {
   display: initial;
+}
+
+@media screen and (max-width: 469px) {
+  .line {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -9,10 +9,20 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/pages/questions.css">
   <script src="../js/toggleQues.js" defer></script>
+  <script src="../js/toggleNav.js" defer></script>
 </head>
 <body>
+  <div class="shade" id="shade"></div>
   <header class="header">
-    <nav class="header-nav">
+    <span class="header__phone-number">
+      +998 91 400-74-39
+    </span>
+    <i class="fas fa-bars header__bars" id="barsIcon"></i>
+    <nav class="header-nav" id="nav">
+      <i class="fas fa-times header-nav__close" id="closeIcon"></i>
+      <span class="header-nav__phone-number">
+        +998 91 400-74-39
+      </span>
       <div class="header-nav__link">
         <a href="../index.html">About</a>
       </div>
@@ -31,7 +41,7 @@
   <main class="main">
     <h1 class="main__title">Questions</h1>
     <span class="main__subtitle">Most asked questions</span>
-    <div class="main__line"></div>
+    <div class="line"></div>
     <ul class="ques">
       <li class="ques__que ques__que--closed">
         <div class="ques__que-header">
@@ -46,7 +56,66 @@
           website for recruiters to show my skills.
         </p>
       </li>
+      <li class="ques__que ques__que--closed">
+        <div class="ques__que-header">
+          <h3 class="ques__que-title">
+            Do you study?
+          </h3>
+          <i class="fas fa-sort-down"></i>
+        </div>
+        <p class="ques__que-answer">
+          Currenty I'm studying in Inha university in
+          Tashkent as a first year student in a computer
+          engeneering faculty.
+        </p>
+      </li>
     </ul>
   </main>
+  <footer class="footer">
+    <!-- <div class="footer__wrapper"> -->
+      <div class="footer__column">
+        <h3 class="footer__column-title">About</h3>
+        <ul class="footer__column-items">
+          <li class="footer__column-item">
+            Handcrafted using <br>
+            Html, Css <br>
+          </li>
+          <li class="footer__column-item">
+            Author: Saidov Daler <br>
+            UI/UX: Saidova Takhmina <br>
+          </li>
+          <li class="footer__column-item">
+            @ dalerfrontend 2021
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__column-title">Explore</h3>
+        <ul class="footer__column-items">
+          <li class="footer__column-item">About</li>
+          <li class="footer__column-item">Portfolio</li>
+          <li class="footer__column-item">Questions</li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__column-title">Follow</h3>
+        <ul class="footer__column-items">
+          <li class="footer__column-item">
+            <a href="https://www.instagram.com/dalerfrontend/?hl=ru">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </li>
+          <li class="footer__column-item">
+            <a href="https://twitter.com/DalerSaidov2003">
+              <i class="fab fa-twitter"></i> Twitter 
+            </a>
+          </li>
+          <li class="footer__column-item">
+            <i class="fab fa-telegram"></i> Telegram 
+          </li>
+        </ul>
+      </div>
+    <!-- </div>   -->
+  </footer>
 </body>
 </html>
