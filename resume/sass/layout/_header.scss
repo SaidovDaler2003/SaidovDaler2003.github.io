@@ -49,21 +49,32 @@
     & {
       min-height: initial;
       position: sticky;
-      padding: 20px;
+      padding: 0px 10px;
       top: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      z-index: 997;
     }
     &__scroll {
       display: none;
     }
     &__phone-number {
       display: initial;
+      font-size: 25px;
     }
     &__bars {
       display: initial;
       font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .header {
+    & {}
+    &__phone-number {
+      font-size: 15px;
     }
   }
 }

@@ -97,21 +97,28 @@ h4 {
   .header {
     min-height: initial;
     position: sticky;
-    padding: 20px;
+    padding: 0px 10px;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 997;
   }
   .header__scroll {
     display: none;
   }
   .header__phone-number {
     display: initial;
+    font-size: 25px;
   }
   .header__bars {
     display: initial;
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 383px) {
+  .header__phone-number {
+    font-size: 15px;
   }
 }
 .header-nav {
@@ -124,11 +131,9 @@ h4 {
   margin: 0 15px;
   font-size: 18px;
   user-select: none;
-}
-.header-nav__link a {
   color: white;
 }
-.header-nav__link--active a {
+.header-nav__link--active {
   color: #9273cd;
 }
 .header-nav__phone-number {
@@ -146,13 +151,14 @@ h4 {
 
 @media screen and (max-width: 757px) {
   .header-nav {
-    border: 2px solid black;
+    justify-content: flex-start;
     padding: 20px;
     flex-direction: column;
-    background-color: black;
+    background-color: white;
     position: fixed;
     top: 0;
     right: 0;
+    bottom: 0;
     z-index: 999;
     transition: transform 0.2s linear;
     transform: translateX(100%);
@@ -170,11 +176,11 @@ h4 {
     display: none;
   }
   .header-nav__close {
-    display: initial;
+    z-index: 999;
     position: absolute;
     top: 10px;
     left: 10px;
-    color: white;
+    color: black;
     font-size: 20px;
   }
 }
@@ -213,10 +219,45 @@ h4 {
   vertical-align: middle;
 }
 
+@media screen and (max-width: 997px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 30px;
+  }
+  .footer__column {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 516px) {
+  .footer {
+    padding: 10px;
+    align-items: flex-start;
+    line-height: 1;
+  }
+  .footer__column-item {
+    margin: 3px 0;
+  }
+}
 .line {
   height: 3px;
   margin: 10px 0 60px;
   background-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
+}
+
+.shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  z-index: 800;
+  background-color: rgba(0, 0, 0, 0.582);
+}
+.shade--shown {
+  display: initial;
 }
 
 /*# sourceMappingURL=index.css.map */
