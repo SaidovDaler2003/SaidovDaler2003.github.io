@@ -4,7 +4,7 @@
 }
 
 .about {
-  background-color: white;
+  background-color: #f3f3f37e;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -211,6 +211,15 @@
   }
   .languages__table {
     width: 100%;
+  }
+}
+@media screen and (max-width: 467px) {
+  .languages__cell {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+  .languages__lang-bar {
+    height: 15px;
   }
 }
 .why-choose {

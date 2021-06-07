@@ -56,3 +56,12 @@
     padding: 0 20px;
   }
 }
+
+@media screen and (max-width: 489px) {
+  .ques {
+    & {}
+    &__que {
+      padding: 10px;
+    }
+  }
+}

@@ -14,10 +14,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: #F7F4FF;
-}
-
 ul {
   list-style-type: none;
 }
@@ -42,6 +38,19 @@ h4 {
   font-size: 25px;
 }
 
+@media screen and (max-width: 487px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+}
 @font-face {
   font-family: open-sans;
   src: url(../fonts/OpenSans-Regular.ttf);
@@ -95,6 +104,8 @@ h4 {
 }
 @media screen and (max-width: 757px) {
   .header {
+    background-image: none;
+    background-color: black;
     min-height: initial;
     position: sticky;
     padding: 0px 10px;
@@ -114,6 +125,9 @@ h4 {
   .header__bars {
     display: initial;
     font-size: 30px;
+    background-color: #7108d3;
+    padding: 4px 8px;
+    border-radius: 5px;
   }
 }
 @media screen and (max-width: 383px) {
@@ -195,6 +209,9 @@ h4 {
   display: flex;
   justify-content: center;
 }
+.footer__wrapper {
+  display: flex;
+}
 .footer__column {
   margin: 0 70px;
 }
@@ -226,8 +243,10 @@ h4 {
   .footer {
     flex-direction: column;
     align-items: center;
-    align-content: center;
     padding: 30px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
   }
   .footer__column {
     margin: 10px 0;
@@ -236,7 +255,7 @@ h4 {
 @media screen and (max-width: 516px) {
   .footer {
     padding: 10px;
-    align-items: flex-start;
+    font-size: 14px;
     line-height: 1;
     margin-top: 30px;
   }

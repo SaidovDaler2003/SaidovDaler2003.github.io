@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  background-color: #F7F4FF;
+  // background-color: #F7F4FF;
 }
 
 ul {
@@ -41,4 +41,16 @@ h3 {
 
 h4 {
   font-size: 25px;
+}
+
+@media screen and (max-width: 487px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 25px;
+  }
 }

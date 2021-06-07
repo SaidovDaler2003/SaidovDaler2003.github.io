@@ -45,5 +45,10 @@
     padding: 0 20px;
   }
 }
+@media screen and (max-width: 489px) {
+  .ques__que {
+    padding: 10px;
+  }
+}
 
 /*# sourceMappingURL=questions.css.map */

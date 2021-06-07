@@ -47,6 +47,8 @@
 @media screen and (max-width: 757px) {
   .header {
     & {
+      background-image: none;
+      background-color: black;
       min-height: initial;
       position: sticky;
       padding: 0px 10px;
@@ -66,6 +68,9 @@
     &__bars {
       display: initial;
       font-size: 30px;
+      background-color: rgb(113, 8, 211);
+      padding: 4px 8px;
+      border-radius: 5px;
     }
   }
 }

@@ -10,7 +10,8 @@
 
 .about {
   & {
-    background-color: rgb(255, 255, 255);
+    // background-color: rgb(255, 255, 255);
+    background-color: #f3f3f37e;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,6 +251,18 @@
     }
     &__table {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .languages {
+    &__cell {
+      font-size: 16px;
+      padding: 10px 5px;
+    }
+    &__lang-bar {
+      height: 15px;
     }
   }
 }
