@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/apple-store/static/css/main.1a40ab3d.chunk.css",
-    "main.js": "/apple-store/static/js/main.d938ad7a.chunk.js",
-    "main.js.map": "/apple-store/static/js/main.d938ad7a.chunk.js.map",
+    "main.css": "/apple-store/static/css/main.3d1b469d.chunk.css",
+    "main.js": "/apple-store/static/js/main.d08c19ca.chunk.js",
+    "main.js.map": "/apple-store/static/js/main.d08c19ca.chunk.js.map",
     "runtime-main.js": "/apple-store/static/js/runtime-main.114e89c9.js",
     "runtime-main.js.map": "/apple-store/static/js/runtime-main.114e89c9.js.map",
-    "static/js/2.5d9bfd2f.chunk.js": "/apple-store/static/js/2.5d9bfd2f.chunk.js",
-    "static/js/2.5d9bfd2f.chunk.js.map": "/apple-store/static/js/2.5d9bfd2f.chunk.js.map",
+    "static/js/2.3dc11093.chunk.js": "/apple-store/static/js/2.3dc11093.chunk.js",
+    "static/js/2.3dc11093.chunk.js.map": "/apple-store/static/js/2.3dc11093.chunk.js.map",
     "index.html": "/apple-store/index.html",
-    "static/css/main.1a40ab3d.chunk.css.map": "/apple-store/static/css/main.1a40ab3d.chunk.css.map",
-    "static/js/2.5d9bfd2f.chunk.js.LICENSE.txt": "/apple-store/static/js/2.5d9bfd2f.chunk.js.LICENSE.txt",
+    "static/css/main.3d1b469d.chunk.css.map": "/apple-store/static/css/main.3d1b469d.chunk.css.map",
+    "static/js/2.3dc11093.chunk.js.LICENSE.txt": "/apple-store/static/js/2.3dc11093.chunk.js.LICENSE.txt",
     "static/media/reset.scss": "/apple-store/static/media/RedHatDisplay-Regular.e7897cb2.ttf",
     "static/media/airpods-1.8c16e1f5.png": "/apple-store/static/media/airpods-1.8c16e1f5.png",
     "static/media/airpods-black.efae4068.png": "/apple-store/static/media/airpods-black.efae4068.png",
@@ -22,12 +22,19 @@
     "static/media/p-1.6873eafe.png": "/apple-store/static/media/p-1.6873eafe.png",
     "static/media/p-2.fff23d23.png": "/apple-store/static/media/p-2.fff23d23.png",
     "static/media/p-3.f07f0e54.png": "/apple-store/static/media/p-3.f07f0e54.png",
-    "static/media/p-4.57b2b336.png": "/apple-store/static/media/p-4.57b2b336.png"
+    "static/media/p-4.57b2b336.png": "/apple-store/static/media/p-4.57b2b336.png",
+    "static/media/p-5.0fb57db7.png": "/apple-store/static/media/p-5.0fb57db7.png",
+    "static/media/p-6.948bd5ae.png": "/apple-store/static/media/p-6.948bd5ae.png",
+    "static/media/p-7.3079a256.png": "/apple-store/static/media/p-7.3079a256.png",
+    "static/media/p-8.95581169.png": "/apple-store/static/media/p-8.95581169.png",
+    "static/media/popular-1.d04316b0.png": "/apple-store/static/media/popular-1.d04316b0.png",
+    "static/media/popular-2.037b75c3.png": "/apple-store/static/media/popular-2.037b75c3.png",
+    "static/media/popular-3.fc2d18a6.png": "/apple-store/static/media/popular-3.fc2d18a6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.114e89c9.js",
-    "static/js/2.5d9bfd2f.chunk.js",
-    "static/css/main.1a40ab3d.chunk.css",
-    "static/js/main.d938ad7a.chunk.js"
+    "static/js/2.3dc11093.chunk.js",
+    "static/css/main.3d1b469d.chunk.css",
+    "static/js/main.d08c19ca.chunk.js"
   ]
 }
