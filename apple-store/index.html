@@ -1,1 +1,706 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><title>React App</title><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="/apple-store/static/css/main.68655c9e.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,a=r[0],i=r[1],p=r[2],c=0,s=[];c<a.length;c++)l=a[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(f&&f(r);s.length;)s.shift()();return u.push.apply(u,p||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var i=t[a];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/apple-store/";var a=this["webpackJsonpsocial-media"]=this["webpackJsonpsocial-media"]||[],i=a.push.bind(a);a.push=r,a=a.slice();for(var p=0;p<a.length;p++)r(a[p]);var f=i;t()}([])</script><script src="/apple-store/static/js/2.1fcc3f34.chunk.js"></script><script src="/apple-store/static/js/main.0792809d.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  
+  <header class="header">
+  <div class="container header__container">
+    <div class="header__body">
+      <div class="header__logo">
+        SmartTeck.
+      </div>
+    <!-- Only mobile -->
+      <span class="material-icons header__burger">
+        menu
+      </span>
+    <!-- Only mobile -->
+      <ul class="header__nav">
+        <li class="header__nav-link header__nav-link--active">Main</li>
+        <li class="header__nav-link">Macbook</li>
+        <li class="header__nav-link">iPhone</li>
+        <li class="header__nav-link">Airpods</li>
+        <li class="header__nav-link">
+          <span class="material-icons header__location-icon">
+            location_on
+          </span>
+          Location
+        </li>
+      </ul>
+      <div class="header__search">
+        <span class="material-icons header__search-icon">
+          search
+        </span>
+        <input type="text" class="header__search-input" placeholder="Search">
+      </div>
+    </div>
+  </div>
+  <div class="header__line"></div>
+</header>
+  <div class="intro">
+  <div class="container intro__container">
+    <div class="intro__body">
+      
+      <div class="intro__main">
+        <h1 class="intro__title">
+          Work can be pleasurable
+          with MacBook
+        </h1>
+        <p class="intro__about">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          sollicitudin cras aliquam vitae commodo consectetur nulla diam enim. 
+        </p>
+        <img src="images/intro-sm.png" alt="" class="intro__img intro__img--sm">
+        <div class="intro__main-footer">
+          <button class="intro__contact-btn">
+            Contact
+          </button>
+          <span class="intro__location">
+            <span class="material-icons intro__location-icon">
+              location_on
+            </span> Location
+          </span>
+        </div>
+      </div>
+
+      <img src="images/intro.png" class="intro__img intro__img--lg">
+
+    </div>
+  </div>
+</div>
+
+  <div class="desc">
+  <img src="images/desc.png" class="desc__img">
+  <div class="desc__container container">
+    <div class="desc__body">
+      <ul class="desc__list">
+
+        <div class="desc__col">
+          <li class="desc__list-item">
+            <h3 class="h2 desc__title">Water proof</h3>
+            <p class="desc__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sagittis semper felis.
+            </p>
+          </li>
+          
+          <li class="desc__list-item">
+            <h3 class="h2 desc__title">Unique design</h3>
+            <p class="desc__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sagittis semper felis.
+            </p>
+          </li>
+        </div>
+
+        <div class="desc__col">
+          <li class="desc__list-item">
+            <h3 class="h2 desc__title">A lot of features</h3>
+            <p class="desc__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sagittis semper felis.
+            </p>
+          </li>
+  
+          <li class="desc__list-item">
+            <h3 class="h2 desc__title">Another pros</h3>
+            <p class="desc__about">
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Sagittis semper felis.
+            </p>
+          </li>
+        </div>
+
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="products">
+  <div class="container products__container">
+    <h2 class="h1 products__title">
+      Products
+    </h2>
+    <div class="products__body">
+      <ul class="products__list">
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--availabe">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-1.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-2.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-3.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-4.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-5.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-6.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-7.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+        <div class="product">
+  <h3 class="h2 product__title">iPhone 12 Max</h3>
+  <div class="product__status product__status--not-available">
+    Available now
+  </div>
+  <div class="product__img-container">
+    <img src="images/products/p-8.png" class="product__img">
+  </div>
+  <div class="product__colors">
+    Available colors
+    <ul class="product__colors-list">
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+      <li class="product__color"></li>
+    </ul>
+  </div>
+  <div class="product__reviews">
+    <ul class="product__stars">
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+      <li class="product__star">
+        <span class="material-icons product__star-icon">star</span>
+      </li>
+    </ul>
+    <span>(28) reviews</span>
+  </div>
+  <div class="product__price">
+    $945.<span class="product__price--small">95</span>
+  </div>
+</div>
+      </ul>
+    </div>
+    <div class="pagination products__pagination">
+  <ul class="pagination__list">
+    <li class="pagination__list-item">1</li>
+    <li class="pagination__list-item pagination__list-item--selected">2</li>
+    <li class="pagination__list-item">3</li>
+  </ul>
+</div>
+
+  </div>
+</div>
+  <div class="discount">
+  <div class="discount__container container">
+    <div class="discount__body">
+
+      <div class="discount__main">
+        <h2 class="h1 discount__title">
+          Buy MacBook Pro and
+          get 20% <span class="discount__title--dark">DISCOUNT!</span>
+        </h2>
+        <button class="discount__contact-btn">
+          Contact
+        </button>
+      </div>
+
+      <img src="images/discount.png" class="discount__img">
+
+    </div>
+  </div>
+</div>
+
+  <div class="popular">
+  <div class="popular__container container">
+    <h2 class="h1 popular__title">Popular models</h2>
+    <div class="popular__body">
+      <ul class="popular__list">
+        
+        <li class="popular__list-item">
+          <div class="popular__img-container">
+            <img src="images/popular/p-1.png" class="popular__img">
+          </div>
+          <div class="popular__top-right">
+            <h3 class="h2 popular__product-title">
+              Macbook Air
+            </h3>
+            <ul class="popular__colors">
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+            </ul>
+          </div>
+          <div class="popular__bottom-right">
+            <div class="popular__price-new">$586</div>
+            <div class="popular__price-old">$46.25</div>
+          </div>
+          <div class="popular__sale-label">
+            sale
+          </div>
+        </li>
+
+        
+        <li class="popular__list-item">
+          <div class="popular__img-container">
+            <img src="images/popular/p-2.png" class="popular__img">
+          </div>
+          <div class="popular__top-right">
+            <h3 class="h2 popular__product-title">
+              Macbook Air
+            </h3>
+            <ul class="popular__colors">
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+            </ul>
+          </div>
+          <div class="popular__bottom-right">
+            <div class="popular__price-new">$586</div>
+            <div class="popular__price-old">$46.25</div>
+          </div>
+          <div class="popular__sale-label">
+            sale
+          </div>
+        </li>
+
+        <li class="popular__list-item">
+          <div class="popular__img-container">
+            <img src="images/popular/p-3.png" class="popular__img">
+          </div>
+          <div class="popular__top-right">
+            <h3 class="h2 popular__product-title">
+              Macbook Air
+            </h3>
+            <ul class="popular__colors">
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+              <li class="popular__color"></li>
+            </ul>
+          </div>
+          <div class="popular__bottom-right">
+            <div class="popular__price-new">$586</div>
+            <div class="popular__price-old">$46.25</div>
+          </div>
+          <div class="popular__sale-label">
+            sale
+          </div>
+        </li>
+
+
+
+      </ul>
+    </div>
+    <div class="pagination popular__pagination">
+  <ul class="pagination__list">
+    <li class="pagination__list-item">1</li>
+    <li class="pagination__list-item pagination__list-item--selected">2</li>
+    <li class="pagination__list-item">3</li>
+  </ul>
+</div>
+
+  </div>
+</div>
+  <div class="toggle-nav">
+  <span class="material-icons toggle-nav__close-icon">
+    close
+  </span>
+  <ul class="toggle-nav__nav">
+    <li class="toggle-nav__nav-link toggle-nav__nav-link--active">Home</li>
+    <li class="toggle-nav__nav-link">Macbook</li>
+    <li class="toggle-nav__nav-link">iPhone</li>
+    <li class="toggle-nav__nav-link">Airpods</li>
+  </ul>
+</div>
+
+  <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__body">
+
+      <div class="footer__rights">
+        All rights reserved
+      </div>
+
+    <!-- Only mobile -->
+      <ul class="footer__social-list footer__social-list--mobile">
+        <li class="footer__social-link">
+          <i class="fab fa-instagram footer__icon"></i>
+        </li>
+        <li class="footer__social-link">
+          <i class="fab fa-twitter footer__icon"></i>
+        </li>
+        <li class="footer__social-link">
+          <i class="fab fa-github footer__icon"></i>
+        </li>
+      </ul>
+    <!-- Only mobile -->
+
+      <div class="footer__section footer__products-section">
+        <h3 class="footer__section-title">Our products</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <span class="footer__text">
+              Macbook
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="footer__text">
+              iPhone
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="footer__text">
+              Airpods
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__section footer__about-section">
+        <h3 class="footer__section-title">About</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <span class="footer__text">
+              About Macbooks
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="footer__text">
+              About iPhone
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="footer__text">
+              About Airpods
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__section footer__contact-section">
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <span class="material-icons footer__icon">
+              call
+            </span>
+            <span class="footer__text footer__text--after-icon">
+              +998 71 241 9666
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="material-icons footer__icon">
+              date_range
+            </span>
+            <span class="footer__text footer__text--after-icon footer__text--multi-line"
+            > 09:00 — 20:00
+              Monday - Sunday
+            </span>
+          </li>
+          <li class="footer__list-item">
+            <span class="material-icons footer__icon">
+              location_on
+            </span>
+            <span class="footer__text footer__text--after-icon footer__text--multi-line"
+            > Uzbekistan, Tashkent,
+              Chilonzor street 25
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__section footer__social-section">
+        <h3 class="footer__section-title">Social Media</h3>
+        <ul class="footer__social-list">
+          <li class="footer__social-link">
+            <i class="fab fa-instagram footer__icon"></i>
+          </li>
+          <li class="footer__social-link">
+            <i class="fab fa-twitter footer__icon"></i>
+          </li>
+          <li class="footer__social-link">
+            <i class="fab fa-github footer__icon"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+  <script src="./index.js"></script>
+</body>
+</html>
